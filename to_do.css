@@ -1,0 +1,96 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.welcomePage{
+  width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+.displayToday{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todayTasks{
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  color: green;
+  cursor: pointer;
+}
+.task_items{
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  color: green;
+  cursor: pointer;
+}
+
+.task_items:hover{
+  background-color: #0056b3;
+}
+.task_items::after {
+  content: "Add task!";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;  /* Prevents the pseudo-element from capturing mouse events */
+  margin-top: 5px; /* Space between button and text */
+}
+.task_items:hover::after {
+  opacity: 1;
+}
+
+.addNewTask{
+  display: none;
+  justify-content: center;
+  justify-content:space-between;
+  margin-top: 20px;
+  width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.todo_name{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: inherit;
+}
+.current_date{
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: inherit;
+}
+.add_button{
+  float: right;
+  margin-top: 20px;
+  padding: 5px 20px;
+  font-size: large;
+  font-weight: 600px;
+  color: green;
+
+}
+.alertmessage{
+  display: none;
+}
+.displayList{
+  display: none;
+}

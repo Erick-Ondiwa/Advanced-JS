@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-do List</title>
+
+  <link rel="stylesheet" href="to_do.css">
+
 </head>
 <body>
-  <div id="addNewTask">
-    <h1 class="title">Todo List</h1><br>
-    <input type="text" id="todoName" placeholder="Todo name">
-    <input id="currentdate" type="date">
+  <div id="welcome_page" class="welcomePage">
+    <h1>Todo List</h1>
+    <div class="displayToday">
+      <img src="" alt="" class="myProfile">
+      <button id="today_button" class="todayTasks">Today</button>
+      <button id="display_task_items" class="task_items">+</button>
+
+    </div>
+  </div>
+  <div class="addNewTask" id="addNewTask">
+    <h1 class="title">Add a Task</h1><br>
+    <input type="text" class="todo_name" id="todoName" placeholder="Type the task name here">
+    <input class="current_date" id="currentdate" type="date">
 
     <button class="add_button">Add</button>
   </div>
 
-  <div class="display_list">
+  <div id="display_list" class="displayList">
     <H1>List Items</H1>
   </div>
 
